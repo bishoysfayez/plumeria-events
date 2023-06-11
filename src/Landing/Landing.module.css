@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito+Sans:wght@400&family=Pacifico&family=Satisfy&display=swap");
+.landingBg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../public/imgs/3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landingBg .jumboTitle {
+  font-family: "Nunito Sans", sans-serif !important;
+  color: #344e41 !important;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 400;
+  line-height: 2em;
+  font-style: normal;
+  padding: 0.5rem;
+}
+.landingBg .startBtn {
+  padding: 1.5rem;
+  width: auto;
+  font-size: 1.13rem;
+  font-family: "Nunito Sans", sans-serif !important;
+  background-color: gold !important;
+  color: black;
+  font-weight: 400;
+}
+.landingBg .startBtn:hover {
+  background-color: #344e41 !important;
+  color: white;
+}
+.landingBg .galleryBtn {
+  width: auto;
+  font-size: 1.13rem;
+  font-family: "Nunito Sans", sans-serif !important;
+  font-weight: 400;
+}
+
+.imgContainer {
+  width: 500px;
+  height: 70vh;
+  background-image: url(../../public/imgs/bg-10.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 28% 72% 56% 44%/30% 30% 70% 70%;
+  box-shadow: 0.5rem 0.5rem rgb(245, 108, 211), -0.5rem -0.5rem rgb(245, 108, 211);
+}/*# sourceMappingURL=Landing.module.css.map */

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito+Sans:wght@400&family=Pacifico&family=Satisfy&display=swap');
+
+
+
+.navbarContainer{
+  padding: 0!important;
+  display: flex;
+  flex-direction: row;
+  align-items:center!important;
+  justify-content: space-between!important;
+
+  ul{
+    align-self: center;
+    align-items: center;
+
+    li{
+      margin: auto 2rem;
+      .navbarLink{
+        font-family: 'Nunito Sans', sans-serif!important;
+        color: #344e41!important;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
+        line-height: 2em;
+        font-style: normal;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: 1.15rem;
+      
+      }
+      .dropdownNavbar li a{
+        font-family: 'Nunito Sans', sans-serif!important;
+        color: #344e41!important;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-weight: 400;
+        line-height: 2em;
+        font-style: normal;
+      }
+      .dropdownNavbar li a:hover{
+        background-color: rgba(#ffb703,0.4)!important;
+        color: white;
+      }
+
+      .navbarLink:hover{
+        background-color: rgba(#ffb703,0.4)!important;
+        color: white;
+  
+      }
+    }
+  }
+  
+  .logoTitle {
+    font-family: "Satisfy", cursive;
+    font-size: 2rem;
+    color: #ffb703;
+    .logoContainer{
+
+      .materialSymbolsOutlined {
+        font-size: 2rem !important;
+        color: #219ebc;
+        filter: drop-shadow(0 0 10px #50d6ff);
+
+      }
+    }
+  
+  }
+  
+}
+.logoImage{
+  width: 70px;
+}

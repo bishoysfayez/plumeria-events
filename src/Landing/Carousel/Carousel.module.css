@@ -1,0 +1,42 @@
+.carouselContainer .carousel-item {
+  width: 500px;
+  height: 350px;
+  overflow: hidden;
+}
+.carouselContainer .carousel-item img {
+  width: 100%;
+  height: 100% !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logoTitle {
+  max-width: 100vw;
+}
+.logoTitle h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 3.5rem;
+  color: #ffb703;
+  overflow: hidden;
+  margin: auto;
+  max-width: 100vw;
+}
+.logoTitle h3 {
+  font-family: "Satisfy", cursive;
+  font-size: 2rem;
+  color: #ffb703;
+}
+
+.logoTitle::before {
+  content: "Plumeria";
+  max-width: 90vw;
+  position: absolute;
+  z-index: -1;
+  margin: auto;
+  top: 25px;
+  left: -50%;
+  right: -50%;
+  text-transform: uppercase;
+  color: rgba(52, 78, 65, 0.15);
+  font-size: 6rem;
+}/*# sourceMappingURL=Carousel.module.css.map */
