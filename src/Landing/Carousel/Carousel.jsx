@@ -8,7 +8,6 @@ import image_6 from "../../imgs/6.jpg";
 import image_12 from "../../imgs/12.jpg";
 import AOS from "aos";
 import styles from "./Carousel.module.css";
-
 function Caro() {
   useEffect(() => {
     AOS.init({

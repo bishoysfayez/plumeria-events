@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
-import { Field, Form, Formik, FormikProps, ErrorMessage } from "formik";
+import { Field, Form, Formik, ErrorMessage } from "formik";
+import axios from 'axios';
 import styles from "./Contact.module.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 
 export default function Contact() {
   useEffect(() => {
@@ -14,7 +16,7 @@ export default function Contact() {
   return (
     <>
       <div className="container my-4 py-2">
-        <div className="container overlow-hidden" data-aos="slide-up">
+        <div className="container overlow-hidden" data-aos="fade-up">
           <h2
             className={`my-2 ${styles.contactSectionTitle} overlow-hidden`}
             data-aos="fade-up"
@@ -44,6 +46,19 @@ export default function Contact() {
           }}
           onSubmit={(values, { setSubmitting }) => {
             setTimeout(() => {
+              axios({
+                method: "POST",
+                url: "https://formspree.io/f/xrgvngzq",
+                data: values,
+              })
+                .then(function (res) {
+                  console.log(res);
+                  alert("Successfully signed up!");
+                })
+                .catch(function (res) {
+                  console.log(res);
+                });
+
               alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
             }, 400);
@@ -52,7 +67,7 @@ export default function Contact() {
           {({ isSubmitting }) => (
             <Form className="form-group">
               <Field
-                data-aos="slide-left"
+                data-aos="fade-left"
                 type="text"
                 name="name"
                 placeholder="Your Name"
@@ -62,7 +77,7 @@ export default function Contact() {
 
               <br />
               <Field
-                data-aos="slide-left"
+                data-aos="fade-left"
                 type="email"
                 name="email"
                 placeholder="e-mail"
@@ -71,7 +86,7 @@ export default function Contact() {
               />
               <br />
               <Field
-                data-aos="slide-left"
+                data-aos="fade-left"
                 as="textarea"
                 name="message"
                 id="message"
@@ -83,26 +98,26 @@ export default function Contact() {
 
               <div className="container w-75">
                 <ErrorMessage
-                  data-aos="slide-left"
+                  data-aos="fade-left"
                   name="name"
                   component="div"
                   className="text-white bg-danger mx-auto my-3 w-50"
                 />
                 <ErrorMessage
-                  data-aos="slide-left"
+                  data-aos="fade-left"
                   name="email"
                   component="div"
                   className="text-white bg-danger mx-auto my-3 w-50"
                 />
                 <ErrorMessage
-                  data-aos="slide-left"
+                  data-aos="fade-left"
                   name="message"
                   component="div"
                   className="text-white bg-danger mx-auto my-3 w-50"
                 />
               </div>
               <button
-                data-aos="slide-left"
+                data-aos="fade-left"
                 type="submit"
                 disabled={isSubmitting}
                 className="text-center mx-auto btn btn-info"
