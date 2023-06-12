@@ -11,7 +11,9 @@
 }
 
 .logoTitle {
-  max-width: 100vw;
+  max-width: 90vw;
+  padding: 1.25rem;
+  overflow: hidden;
 }
 .logoTitle h1 {
   font-family: "Satisfy", cursive;
@@ -25,18 +27,4 @@
   font-family: "Satisfy", cursive;
   font-size: 2rem;
   color: #ffb703;
-}
-
-.logoTitle::before {
-  content: "Plumeria";
-  max-width: 90vw;
-  position: absolute;
-  z-index: -1;
-  margin: auto;
-  top: 25px;
-  left: -50%;
-  right: -50%;
-  text-transform: uppercase;
-  color: rgba(52, 78, 65, 0.15);
-  font-size: 6rem;
 }/*# sourceMappingURL=Carousel.module.css.map */

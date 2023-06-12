@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className={`${styles.navbarContainer} navbar navbar-expand-lg bg-body-tertiary`}
+        className={`${styles.navbarContainer} container-fluid navbar navbar-expand-lg bg-body-tertiary`}
       >
         <div className="container-fluid d-flex flex-row align-items-between">
           <a

@@ -38,4 +38,6 @@
   text-transform: uppercase;
   color: rgba(52, 78, 65, 0.15);
   font-size: 4rem;
+  max-width: 80vw;
+  margin: auto;
 }/*# sourceMappingURL=About.module.css.map */
