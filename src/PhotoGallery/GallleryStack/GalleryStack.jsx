@@ -63,7 +63,7 @@ function GalleryStack() {
         <NavbarNoScroller />
       </div>
 
-      <div className="container mt-4 p-2">
+      <div className="container mx-auto mt-4 p-2">
         <Masonry
           columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
           className={`${styles.photoList} row`}
