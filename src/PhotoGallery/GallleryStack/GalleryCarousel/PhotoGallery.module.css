@@ -1,0 +1,25 @@
+.btnContainerPrev, .btnContainerNext {
+  position: absolute;
+  z-index: 101;
+}
+.btnContainerPrev button, .btnContainerNext button {
+  background-color: rgba;
+  border: 1px solid;
+  padding-inline: 0.41rem;
+  padding-block: 0.1rem;
+  border-radius: 25px;
+}
+.btnContainerPrev button i, .btnContainerNext button i {
+  font-size: 2rem;
+  color: black;
+}
+
+.btnContainerPrev {
+  top: 40vh;
+  left: 10vw;
+}
+
+.btnContainerNext {
+  top: 40vh;
+  right: 10vw;
+}/*# sourceMappingURL=PhotoGaller.module.css.map */

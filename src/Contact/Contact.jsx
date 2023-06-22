@@ -53,13 +53,13 @@ export default function Contact() {
               })
                 .then(function (res) {
                   console.log(res);
-                  alert("Successfully signed up!");
+                  alert("Your message sent successfully!");
                 })
                 .catch(function (res) {
                   console.log(res);
                 });
 
-              alert(JSON.stringify(values, null, 2));
+              //alert(JSON.stringify(values, null, 2));
               setSubmitting(false);
             }, 400);
           }}
@@ -120,7 +120,7 @@ export default function Contact() {
                 data-aos="fade-left"
                 type="submit"
                 disabled={isSubmitting}
-                className="text-center mx-auto btn btn-info"
+                className="form-control d-block mx-4 w-25 text-center mx-auto btn btn-info"
               >
                 Submit
               </button>

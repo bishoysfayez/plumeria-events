@@ -1,31 +1,41 @@
 import "./App.css";
-import About from "./About/About";
-import Contact from "./Contact/Contact.jsx";
-import Portfolio from './Landing/Portfolio/Portfolio.jsx'
-import Caro from './Landing/Carousel/Carousel.jsx'
-import Navbar from './Navbar/Navbar.jsx'
-import Footer from "./Footer/Footer";
+import React from "react";
+
+import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
+
+
+import Home from "./Home/Home";
+import Gallery from "./Gallery/Gallery.jsx";
+import MainLayout from "./MainLayout/MainLayout";
+import GalleryStack from "./PhotoGallery/GallleryStack/GalleryStack";
+import Contact from "./Contact/Contact";
+import NavbarNoScroller from "./NavbarNoScroller/NavbarNoScroller";
 
 function App() {
+  const routers = createBrowserRouter([
+    {
+      path: "",
+      element: <MainLayout />,
+      children: [
+        { path: "/", element: <Home /> },
+        { path: "/photoGallery", element: <GalleryStack />},
+        { path: "/contact", element: <> <NavbarNoScroller/> <Contact /></>},
+
+        { path: "*", element: <Home /> }
+      ]
+    },
+    {
+      path: "/gallery",
+      element: <Gallery />,
+    },
+  ]);
   return (
-    
     <>
-    <Navbar />
-      <div className="container mx-auto my-4 p-2 text-center">
-        <Caro />
-      </div>
-      <div className="container mx-auto my-4 p-2 text-center">
-        <Portfolio />
-      </div>
-      <div className="container mx-auto my-2 p-2 text-center">
-        <About /> 
-      </div>
-      <div className="container mx-auto my-2 p-2 text-center">
-        <Contact />
-      </div>
-      <div className="container-fluid">
-        <Footer />
-      </div>
+      <React.StrictMode>
+        
+        <RouterProvider router={routers}>
+        </RouterProvider>
+      </React.StrictMode>
     </>
   );
 }

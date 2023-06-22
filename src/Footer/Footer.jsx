@@ -1,28 +1,26 @@
-import React from 'react'
+import React from "react";
+import styles from './Footer.module.css'
 
 function Footer() {
   return (
-<>
+    <>
+      <footer className={`${styles.footer} border-top`}>
+        <div className="mx-auto mt-2 mb-0 p-1 text-center w-100">
+        
+        <a
+            href="/"
+            className="mb-3 mx-auto text-center text-muted text-decoration-none"
+          >
+           Developed By: Bishoy Saeed
+          </a>
 
-<footer className="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div className="col-md-4 d-flex align-items-center">
-      <a href="/" className="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-jmjujujj
+          <span className="text-center text-muted"> 2023 - <a target="_blank" href="mailto:bishoysfayez@gmail.com">bishoysfayez@gmail.com</a> </span>
+        </div>
 
-      </a>
-      <span className="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
-    </div>
 
-     <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-      <li className="ms-3"><a className="text-muted" href="#"><i class="bi bi-twitter"></i></a></li>
-      <li className="ms-3"><a className="text-muted" href="#"><i class="bi bi-instagram"></i></a></li>
-      <li className="ms-3"><a className="text-muted" href="#"><i class="bi bi-facebook"></i></a></li>
-    </ul> 
-  </footer>
-
-</>
-
-    )
+      </footer>
+    </>
+  );
 }
 
-export default Footer
+export default Footer;

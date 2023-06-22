@@ -1,0 +1,21 @@
+.navbarFixedContainer {
+  z-index: 99;
+  top: 0;
+}
+
+.carouselContainer {
+  background-image: url("../imgs/4.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  padding: 0 !important;
+}
+
+.aboutContainer {
+  background-image: url("../imgs/11.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}/*# sourceMappingURL=Home.module.css.map */

@@ -1,0 +1,39 @@
+.sectionCrousel {
+  background-color: rgba(white,0.75);
+  margin: 0!important;
+  padding-bottom:4rem ;
+
+.carouselContainer {
+  .carousel-item {
+    width: 500px;
+    height: 350px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100% !important;
+      object-fit: cover;
+    }
+  }
+}
+
+.logoTitle {
+  max-width: 90vw;
+  padding: 1.25rem;
+  overflow: hidden;
+
+  h1 {
+    font-family: "Satisfy", cursive;
+    font-size: 5.5rem;
+    color: #ffb703;
+    overflow: hidden;
+    margin: auto;
+    max-width: 100vw;
+    text-shadow: 2px 3px 9px rgba(22, 0, 0, 1);  }
+  h3 {
+    font-family: "Nunito Sans", sans-serif !important;
+    font-size: 2rem;
+    color: #b90000;
+    text-shadow: 2px 3px 9px rgba(22, 0, 0, 1);
+  }
+}
+}

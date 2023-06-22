@@ -1,23 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Nunito+Sans:wght@400&family=Pacifico&family=Satisfy&display=swap");
+.aboutContianer {
+  background-color: rgba(255, 255, 255, 0.85);
+  margin: 0 !important;
+  padding-bottom: 4rem;
+  min-height: 100vh;
+  display: block;
+}
+.aboutContianer > div {
+  margin-inline: auto;
+  width: 85%;
+}
+
 .imagesFoldContainer {
-  width: 80%;
-  height: 300px;
   border: 2px solid rgba(70, 70, 70, 0.4);
   border-radius: 15px;
 }
 
 .aboutImageContainer {
   max-height: 300px !important;
-  width: 100%;
-  position: absolute !important;
+  position: relative;
   z-index: 2;
   right: 5%;
-  top: 5%;
+  top: 15px;
+  overflow: hidden;
 }
-.aboutImageContainer img {
-  max-height: 100%;
-}
-
 .aboutSectionTitle {
   width: 100%;
   font-family: "Nunito Sans", sans-serif !important;
@@ -31,13 +37,25 @@
 .aboutSectionTitle::before {
   content: "About Us";
   position: absolute;
-  z-index: -1;
+  z-index: 11;
   left: -50%;
   right: -50%;
   top: -10px;
   text-transform: uppercase;
-  color: rgba(52, 78, 65, 0.15);
+  color: rgba(52, 78, 65, 0.25);
   font-size: 4rem;
   max-width: 80vw;
   margin: auto;
+}
+
+.aboutContentTitle {
+  font-family: "Nunito Sans", sans-serif !important;
+  color: #344e41 !important;
+  font-size: 1.15rem;
+}
+.aboutContentTitle span {
+  font-size: 1.75rem;
+  color: #335c47;
+  text-shadow: gold 5px 5px 5px;
+  display: block;
 }/*# sourceMappingURL=About.module.css.map */

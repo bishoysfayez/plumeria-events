@@ -1,9 +1,8 @@
 import React from "react";
-import styles from "./Navbar.module.css";
+import styles from "./NavbarNoScroller.module.css";
 import logo from "../imgs/logo.jpg";
-import { Link } from "react-scroll";
 
-function Navbar() {
+function NavbarNoScroller() {
   return (
     <>
       <nav
@@ -54,27 +53,24 @@ function Navbar() {
                 </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className={` active nav-link ${styles.navbarLink}`}
                   offset={-80}
                   spy={true}
                   smooth={true}
                   duration={1000}
-                  to={"scrollToPortfolio"}
+                  href={"scrollToPortfolio"}
                 >
                   Portfolio
-                </Link>
+                </a>
               </li>
               <li className="nav-item">
-                <Link
+                <a
                   className={` active nav-link ${styles.navbarLink}`}
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                  to={"scrollToAbout"}
+                  href={"scrollToAbout"}
                 >
                   About
-                </Link>
+                </a>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -107,21 +103,18 @@ function Navbar() {
                       className="dropdown-item"
                       href="https://www.facebook.com/profile.php?id=100069960634867"
                     >
-                      <i class="bi bi-facebook"></i> Our Facebook Page
+                      <i class="bi bi-facebook"></i> Our Facebook Page{" "}
                     </a>
                   </li>
                 </ul>
               </li>
               <li className="nav-item">
-                <Link
-                  spy={true}
-                  smooth={true}
-                  duration={1000}
-                  to={"scrolltoContact"}
+                <a
+                  href={"/contact"}
                   className={`nav-link ${styles.navbarLink}`}
                 >
                   Contact
-                </Link>
+                </a>
               </li>
 
               <li className="ms-3">
@@ -156,4 +149,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavbarNoScroller;

@@ -1,0 +1,8 @@
+.footerContainer {
+  background-color: rgba(255, 255, 255, 0.55);
+  position: fixed;
+  bottom: -1px;
+  width: 100vw;
+  margin: 0 !important;
+  z-index: 99;
+}/*# sourceMappingURL=MainLayout.module.css.map */

@@ -1,0 +1,26 @@
+.btnContainerPrev, .btnContainerNext{
+
+    position: absolute;
+    z-index: 1411;
+    button{
+        background-color: rgba();
+        border: 1px solid ;
+        padding-inline: .41rem;
+        padding-block: 0.1rem;
+        border-radius: 25px;
+        i{
+            font-size: 2rem;
+            color: black;
+        }
+    }
+
+
+}
+.btnContainerPrev{
+    top: 40%;
+    left: 10vw;
+}
+.btnContainerNext{
+    top: 40%;
+    right: 10vw;
+}
